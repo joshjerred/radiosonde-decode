@@ -38,7 +38,7 @@ def wind(winddirspeed): # Decode the wind direction and speed, direction is in t
             speed = int(winddirspeed[3:5])
     return direction, speed
 
-def surface(surfdata):
+def surface(surfdata): # Surface pressure data
     if int(surfdata[2:5]) < 300:
         surfacepressure = int(surfdata[2:5]) + 1000
     else:
